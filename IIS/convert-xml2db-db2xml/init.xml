@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+<StaffingStructureDataSet depCode="Администрация" depJob="Генеральный директор" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Администрация" depJob="Главный бухгалтер" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Администрация" depJob="Директор ОП г. Пермь" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Администрация" depJob="Заместитель генерального директора по развитию" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Администрация" depJob="Заместитель генерального директора по внедрению и сопровождению Информационных систем" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АЗС" depJob="Начальник департамента" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АЗС" depJob="Начальник Управления развития" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АЗС" depJob="Начальник отдела" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АЗС" depJob="Главный специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АЗС" depJob="Ведущий специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АЗС" depJob="Специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем Нефтебаз" depJob="Начальник департамента" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем Нефтебаз" depJob="Начальник Управления" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем Нефтебаз" depJob="Начальник отдела" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем Нефтебаз" depJob="Главный специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем Нефтебаз" depJob="Ведущий специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем Нефтебаз" depJob="Специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АСУ ТП" depJob="Начальник департамента" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АСУ ТП" depJob="Начальник Управления" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АСУ ТП" depJob="Начальник отдела" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АСУ ТП" depJob="Главный специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АСУ ТП" depJob="Ведущий специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Систем АСУ ТП" depJob="Специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ. системы" depJob="Начальник департамента" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ. системы" depJob="Начальник управления развития ИС" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ. системы" depJob="Начальник отдела" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ. системы" depJob="Главный специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ. системы" depJob="Ведущий специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ. системы" depJob="Специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Интеграция ИС" depJob="Начальник управления интеграции ИС" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Интеграция ИС" depJob="Начальник отдела" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Интеграция ИС" depJob="Главный специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Интеграция ИС" depJob="Ведущий специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Интеграция ИС" depJob="Специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Учетные системы" depJob="Начальник Управления развития Учетных систем" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Учетные системы" depJob="Начальник отдела" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Учетные системы" depJob="Главный специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Учетные системы" depJob="Ведущий специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Учетные системы" depJob="Специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Аналитические системы" depJob="Начальник Управления развития Аналитических систем" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Аналитические системы" depJob="Начальник отдела" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Аналитические системы" depJob="Главный специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Аналитические системы" depJob="Ведущий специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Аналитические системы" depJob="Специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(вн)" depJob="Начальник департамента" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(вн)" depJob="Начальник управления" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(вн)" depJob="Начальник отдела" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(вн)" depJob="Главный специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(вн)" depJob="Ведущий специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(вн)" depJob="Специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(соп)" depJob="Начальник департамента" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(соп)" depJob="Начальник Управления" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(соп)" depJob="Начальник отдела" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(соп)" depJob="Главный специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(соп)" depJob="Ведущий специалист" description="Инициализация БД"/>
+<StaffingStructureDataSet depCode="Иноформ.Системы(соп)" depJob="Специалист" description="Инициализация БД"/>
+</list>
