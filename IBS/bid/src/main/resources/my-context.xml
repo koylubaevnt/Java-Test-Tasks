@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                           http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd
+                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    
+    <!-- Это для данных в памяти -->
+    <bean name="user1" class="com.koylubaevnt.bid.model.User">
+	    <property name="id" value="1"></property>
+	    <property name="lastName" value="Flinstone"></property>
+	    <property name="firstName" value="Fred"></property>
+	    <property name="email" value="fred@flinstone.com"></property>
+    </bean>
+    <bean name="user2" class="com.koylubaevnt.bid.model.User">
+    	<constructor-arg index="0" type="java.lang.Long" value="2"/>       
+        <constructor-arg index="1" type="java.lang.String" value="Flinstone"/>
+        <constructor-arg index="2" type="java.lang.String" value="Wilma"/>
+        <constructor-arg index="3" type="java.lang.String" value="wilma@flinstone.com"/>
+    </bean>
+    <bean name="user3" class="com.koylubaevnt.bid.model.User">
+    	<constructor-arg index="0" type="java.lang.Long" value="3"/>       
+        <constructor-arg index="1" type="java.lang.String" value="Flinstone"/>
+        <constructor-arg index="2" type="java.lang.String" value="Pebbles"/>
+        <constructor-arg index="3" type="java.lang.String" value="pebbles@flinstone.com"/>
+    </bean>
+    <bean name="user4" class="com.koylubaevnt.bid.model.User">
+    	<constructor-arg index="0" type="java.lang.Long" value="4"/>       
+        <constructor-arg index="1" type="java.lang.String" value="Rubble"/>
+        <constructor-arg index="2" type="java.lang.String" value="Burney"/>
+        <constructor-arg index="3" type="java.lang.String" value="burney@rubble.com"/>
+    </bean>
+    <bean name="user5" class="com.koylubaevnt.bid.model.User">
+    	<constructor-arg index="0" type="java.lang.Long" value="5"/>       
+        <constructor-arg index="1" type="java.lang.String" value="Rubble"/>
+        <constructor-arg index="2" type="java.lang.String" value="Betty"/>
+        <constructor-arg index="3" type="java.lang.String" value="betty@rubble.com"/>
+    </bean>
+    <bean name="user6" class="com.koylubaevnt.bid.model.User">
+    	<constructor-arg index="0" type="java.lang.Long" value="6"/>       
+        <constructor-arg index="1" type="java.lang.String" value="Rubble"/>
+        <constructor-arg index="2" type="java.lang.String" value="BamBam"/>
+        <constructor-arg index="3" type="java.lang.String" value="bambam@rubble.com"/>
+    </bean>
+    
+    <bean name="status1" class="com.koylubaevnt.bid.model.Status">
+		<constructor-arg index="0" type="java.lang.Long" value="1"/>       
+        <constructor-arg index="1" type="java.lang.String" value="New"/>
+	</bean>
+	<bean name="status2" class="com.koylubaevnt.bid.model.Status">
+		<constructor-arg index="0" type="java.lang.Long" value="2"/>       
+        <constructor-arg index="1" type="java.lang.String" value="Send"/>
+	</bean>
+	<bean name="status3" class="com.koylubaevnt.bid.model.Status">
+		<constructor-arg index="0" type="java.lang.Long" value="3"/>       
+        <constructor-arg index="1" type="java.lang.String" value="Recieved"/>
+	</bean>
+	<bean name="status4" class="com.koylubaevnt.bid.model.Status">
+		<constructor-arg index="0" type="java.lang.Long" value="4"/>       
+        <constructor-arg index="1" type="java.lang.String" value="Treated"/>
+	</bean>
+	<bean name="status5" class="com.koylubaevnt.bid.model.Status">
+		<constructor-arg index="0" type="java.lang.Long" value="5"/>       
+        <constructor-arg index="1" type="java.lang.String" value="Rejected"/>
+	</bean>
+	<bean name="status6" class="com.koylubaevnt.bid.model.Status">
+		<constructor-arg index="0" type="java.lang.Long" value="6"/>       
+        <constructor-arg index="1" type="java.lang.String" value="Closed"/>
+	</bean>
+	<bean name="bid1" class="com.koylubaevnt.bid.model.Bid">
+		<constructor-arg name="id" type="java.lang.Long" value="1"/>       
+        <constructor-arg name="number" type="java.lang.String" value="00001"/>
+        <constructor-arg name="from" ref="user1"/>
+        <constructor-arg name="to" ref="user2"/>
+        <constructor-arg name="status" ref="status1"/>
+	</bean>
+	<bean name="bid2" class="com.koylubaevnt.bid.model.Bid">
+		<constructor-arg index="0" type="java.lang.Long" value="2"/>       
+        <constructor-arg index="1" type="java.lang.String" value="00002"/>
+        <constructor-arg index="2" ref="user2"/>
+        <constructor-arg index="3" ref="user3"/>
+        <constructor-arg index="4" type="com.koylubaevnt.bid.model.Status" ref="status2"/>
+	</bean>
+	<bean name="bid3" class="com.koylubaevnt.bid.model.Bid">
+		<constructor-arg index="0" type="java.lang.Long" value="3"/>       
+        <constructor-arg index="1" type="java.lang.String" value="00003"/>
+        <constructor-arg index="2" type="com.koylubaevnt.bid.model.User" ref="user3"/>
+        <constructor-arg index="3" type="com.koylubaevnt.bid.model.User" ref="user4"/>
+        <constructor-arg index="4" type="com.koylubaevnt.bid.model.Status" ref="status3"/>
+	</bean>
+	<bean name="bid4" class="com.koylubaevnt.bid.model.Bid">
+		<constructor-arg index="0" type="java.lang.Long" value="4"/>       
+        <constructor-arg index="1" type="java.lang.String" value="00004"/>
+        <constructor-arg index="2" type="com.koylubaevnt.bid.model.User" ref="user4"/>
+        <constructor-arg index="3" type="com.koylubaevnt.bid.model.User" ref="user5"/>
+        <constructor-arg index="4" type="com.koylubaevnt.bid.model.Status" ref="status4"/>
+	</bean>
+	<bean name="bid5" class="com.koylubaevnt.bid.model.Bid">
+		<constructor-arg index="0" type="java.lang.Long" value="5"/>       
+        <constructor-arg index="1" type="java.lang.String" value="00005"/>
+        <constructor-arg index="2" type="com.koylubaevnt.bid.model.User" ref="user5"/>
+        <constructor-arg index="3" type="com.koylubaevnt.bid.model.User" ref="user6"/>
+        <constructor-arg index="4" type="com.koylubaevnt.bid.model.Status" ref="status5"/>
+	</bean>
+	<bean name="bid6" class="com.koylubaevnt.bid.model.Bid">
+		<constructor-arg index="0" type="java.lang.Long" value="6"/>       
+        <constructor-arg index="1" type="java.lang.String" value="00006"/>
+        <constructor-arg index="2" type="com.koylubaevnt.bid.model.User" ref="user1"/>
+        <constructor-arg index="3" type="com.koylubaevnt.bid.model.User" ref="user6"/>
+        <constructor-arg index="4" type="com.koylubaevnt.bid.model.Status" ref="status6"/>
+	</bean>
+	<!-- Конец данных в памяти -->
+	 
+	<bean name="userDao" class="com.koylubaevnt.bid.model.dao.impl.UserDaoImpl">
+		<property name="users">
+			<list>
+	            <ref bean="user1" />
+	            <ref bean="user2" />
+	            <ref bean="user3" />
+	            <ref bean="user4" />
+	            <ref bean="user5" />
+	            <ref bean="user6" />                
+	        </list>
+		</property>
+    </bean>
+    <bean name="statusDao" class="com.koylubaevnt.bid.model.dao.impl.StatusDaoImpl">
+    	<property name="statusList">
+    	 <list>
+	            <ref bean="status1" />
+	            <ref bean="status2" />
+	            <ref bean="status3" />
+	            <ref bean="status4" />
+	            <ref bean="status5" />
+	            <ref bean="status6" />                
+	        </list>
+		</property>
+    </bean>
+    <bean name="bidDao" class="com.koylubaevnt.bid.model.dao.impl.BidDaoImpl">
+    	<property name="bids">
+    		<list>
+				<ref bean="bid1" />
+	            <ref bean="bid2" />
+	            <ref bean="bid3" />
+	            <ref bean="bid4" />
+	            <ref bean="bid5" />
+	            <ref bean="bid6" />
+			</list>
+    	</property>
+    	<property name="index" value="7"></property>
+    </bean>
+    <bean name="UserService" class="com.koylubaevnt.bid.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao">
+        </property>
+    </bean>
+    <bean name="StatusService" class="com.koylubaevnt.bid.service.impl.StatusServiceImpl">
+        <property name="statusDao" ref="statusDao">
+        </property>
+    </bean>
+    
+    <bean name="BidService" class="com.koylubaevnt.bid.service.impl.BidServiceImpl">
+        <property name="bidDao" ref="bidDao">
+        </property>
+    </bean>
+</beans>
